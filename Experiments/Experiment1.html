@@ -1,91 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>College Timetable</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
 </head>
-
 <body>
+    <h2>Introduction</h2>
+    Welcome to the <b>Course Curriculum</b>. This page demonstrates the use of <i>HTML formatting,</i> <u>lists,</u> 
+    and special characters such as
+    <a>&copy;</a>,
+    <a>&lt;</a>, 
+    <a>&gt;</a>.
 
-<table border="2" cellspacing="0" cellpadding="10">
-    <caption><b>College Timetable - CSE Department</b></caption>
+    <h2>Semester 1 Subjects (Ordered List)</h2>
+    <ol>
+        <li>Mathematics 1</li>
+        <li>Computer Fundamentals</li>
+        <li>Programming in C</li>
+        <li>Electronics Basics</li>
+    </ol>
 
-    <tr>
-        <th>Day / Time</th>
-        <th>9:00 - 10:00</th>
-        <th>10:00 - 11:00</th>
-        <th>11:00 - 12:00</th>
-        <th>12:00 - 1:00</th>
-        <th>1:00 - 2:00</th>
-        <th>2:00 - 3:00</th>
-        <th>3:00 - 4:00</th>
-    </tr>
+    <h2>Programming Languages (Unordered List)</h2>
+    <ul>
+        <li>C</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+    </ul>
 
-    <!-- Monday -->
-    <tr>
-        <th>Monday</th>
-        <td rowspan="2">Mathematics</td>
-        <td>English</td>
-        <td rowspan="3">Physics</td>
-        <td>Break</td>
-        <td colspan="2">Computer Lab</td>
-        <td>Sports</td>
-    </tr>
+    <h2>Course Description (Description List)</h2>
+    <dl>
+        <dt><b>C Programming</b></dt>
+        <dd>Learn basics of C language inculding loops, arrays, and functions.</dd>
+        <dt><b>Java</b></dt>
+        <dd>Introduction to Object-Oriented Programming concepts.</dd>
+    </dl>
 
-    <!-- Tuesday -->
-    <tr>
-        <th>Tuesday</th>
-        <td>C Programming</td>
-        <td>Break</td>
-        <td colspan="2">Electronics Lab</td>
-        <td>Library</td>
-    </tr>
+    <h2>Course Modules (Nested List)</h2>
+    <ol>
+        <li>Module 1: Basics
+        <ul>
+            <li>Introduction</li>
+            <li>History of Computers</li>
+        </ul>
+        </li>
+        <li>Module 2: Programming
+        <ul>
+            <li>Variables &amp; Data Types</li>
+            <li>Control Statements</li>
+        </ul>
+        </li>
+    </ol>
 
-    <!-- Wednesday -->
-    <tr>
-        <th>Wednesday</th>
-        <td>Mathematics</td>
-        <td>English</td>
-        <td>Break</td>
-        <td>Computer Networks</td>
-        <td colspan="2">
-            <table border="2" cellspacing="0" cellpadding="5">
-                <tr>
-                    <th colspan="2">Lab Details</th>
-                </tr>
-                <tr>
-                    <td>Batch A</td>
-                    <td>DBMS Lab</td>
-                </tr>
-                <tr>
-                    <td>Batch B</td>
-                    <td>OS Lab</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-
-    <!-- Thursday -->
-    <tr>
-        <th>Thursday</th>
-        <td colspan="2">Workshop</td>
-        <td>Physics</td>
-        <td>Break</td>
-        <td>Mathematics</td>
-        <td>English</td>
-        <td>Seminar</td>
-    </tr>
-
-    <!-- Friday -->
-    <tr>
-        <th>Friday</th>
-        <td>Computer Networks</td>
-        <td>English</td>
-        <td>Physics</td>
-        <td>Break</td>
-        <td colspan="3">Project Work</td>
-    </tr>
-
-</table>
-
+    <h2>Project Work (Mixed List)</h2>
+    <ul>
+        <li>Web Development
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>
+        <li>Database
+            <ol type="A">
+                <li>MySQL</li>
+                <li>MongoDB</li>
+            </ol>
+        </li>
+    </ul>
 </body>
 </html>
